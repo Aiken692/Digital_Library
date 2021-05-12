@@ -1,5 +1,6 @@
 package com.library.book.Author;
 
+import com.library.book.Audit;
 import com.library.book.book.Book;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
@@ -11,7 +12,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "author")
-public class Author {
+public class Author extends Audit {
 
     @Id
     @SequenceGenerator(
